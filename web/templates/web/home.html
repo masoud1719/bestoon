@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for Expense in Expenses %}
+    <h1>{{ Expense.text }}</h1>
+    <p>{{ Expense.date|date:"F ,d,Y" }}</p>
+    <p>{{ Expense.amount }}</p>
+{% endfor %}
+{% for Income in Incomes %}
+    <h1>{{ Income.text }}</h1>
+    <p>{{ Income.date|date:"F ,d,Y" }}</p>
+    <p>{{ Income.amount }}</p>
+{% endfor %}
+</body>
+</html>
